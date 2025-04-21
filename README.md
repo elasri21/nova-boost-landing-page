@@ -4,6 +4,12 @@
 
 ---
 
+### 🔗 Live Demo
+
+[Click here to view the live site 🚀](https://elasri21.github.io/nova-boost-landing-page/)
+
+---
+
 ## 🌟 Features
 
 - ✅ Fully responsive design
