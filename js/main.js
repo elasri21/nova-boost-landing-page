@@ -22,6 +22,8 @@ document.querySelectorAll('.faq-question').forEach(button => {
     const icon = button.querySelector('.faq-icon');
 
     const isActive = button.classList.contains('active');
+    button.setAttribute('aria-expanded', !isActive);
+    answer.setAttribute('aria-hidden', isActive);
 
     // Reset all
     document.querySelectorAll('.faq-question').forEach(otherBtn => {

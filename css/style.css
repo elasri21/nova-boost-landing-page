@@ -104,6 +104,7 @@ section {
   display: flex;
   align-items: center;
   padding: 80px 0;
+  background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%);
 }
 
 .hero-content {
@@ -181,14 +182,47 @@ section {
   }
 
   .menu {
-    display: none; /* we can add mobile nav later */
+    display: none;
   }
+}
+
+/* clients */
+.clients {
+  padding: 60px 0;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.clients-title {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.clients-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+.clients-logos img {
+  max-height: 40px;
+  object-fit: contain;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.clients-logos img:hover {
+  opacity: 1;
 }
 
 .features {
   padding: 80px 0;
   background-color: #f9f9f9;
   text-align: center;
+  border-top: 1px solid #eee;
 }
 
 .section-title {
@@ -240,6 +274,7 @@ section {
   padding: 80px 0;
   background-color: #fff;
   text-align: center;
+  border-top: 1px solid #eee;
 }
 
 .pricing-grid {
@@ -313,12 +348,27 @@ section {
   border: 2px solid #007bff;
   background-color: #f0f8ff;
 }
+.highlighted:hover {
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.2);
+}
+.badge {
+  display: inline-block;
+  background-color: #ff9800;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
 
 /* testimonials */
 .testimonials {
   background-color: #f9f9f9;
   padding: 80px 0;
   text-align: center;
+  border-top: 1px solid #eee;
 }
 
 .testimonials h2 {
@@ -342,6 +392,18 @@ section {
   flex: 1 1 300px;
 }
 
+.testimonial:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.testimonial .stars {
+  color: #ffc107;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
 .testimonial p {
   font-style: italic;
   margin-bottom: 15px;
@@ -357,9 +419,32 @@ section {
   padding: 80px 0;
   background-color: #fff;
   text-align: center;
+  border-top: 1px solid #eee;
 }
 
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+.contact-info {
+  flex: 1 1 250px;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  color: #444;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+.contact-info h4 {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #111;
+}
 .contact-form {
+  flex: 1 1 250px;
   max-width: 600px;
   margin: 40px auto 0;
   display: flex;
@@ -403,6 +488,7 @@ section {
 .faq {
   padding: 80px 0;
   background-color: #f9f9f9;
+  border-top: 1px solid #eee;
 }
 
 .faq .section-title,
